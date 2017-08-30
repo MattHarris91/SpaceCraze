@@ -8,6 +8,7 @@
 USING_NS_CC;
 using namespace std;
 
+// Preprocessor Directives (everytime a directive is encountered, use replacement instead)
 #define SCREEN_SIZE GameGlobals::screen_size_
 // useful macro to fetch the SAE singleton object
 #define SOUND_ENGINE CocosDenshion::SimpleAudioEngine::getInstance()
@@ -34,10 +35,10 @@ public:
     // Still needed in v3?
     GameGlobals(void){};
     ~GameGlobals(void){};
-    
+
     // virtual bool init in v3?
     static void init();
-    
+
     static void LoadData();
     static Size screen_size_;
     // Helper methods
